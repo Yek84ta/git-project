@@ -20,6 +20,7 @@ public class Main {
         panel.setBackground(new Color(0xEEE8AA));
         panel.setBounds(0, 0, 600, 600);
 
+
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
         title.setHorizontalAlignment(JLabel.CENTER);
