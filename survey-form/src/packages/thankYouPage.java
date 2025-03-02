@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class thankYouPage {
 
@@ -8,15 +9,16 @@ public class thankYouPage {
 
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setBackground(new Color(0xEEE8AA));
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
-        thankYouLabel.setBounds(10, 10, 200, 20);
+        thankYouLabel.setHorizontalAlignment(SwingConstants.CENTER) ;
 
         // Add components to the panel
-        panel.add(thankYouLabel);
+        panel.add(thankYouLabel , BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
