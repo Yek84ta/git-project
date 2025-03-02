@@ -6,6 +6,7 @@ import java.awt.*;
 public class informationPage {
 
     public void create(JFrame frame) {
+        Font newfont = new Font("Monospaced", Font.BOLD, 12);
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBackground(new Color(0xEEE8AA));
@@ -16,27 +17,45 @@ public class informationPage {
         panel.add(Box.createRigidArea(new Dimension(350,0)));
 
         // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
+        JLabel nameLabel = new JLabel("Name");
+        nameLabel.setFont(newfont);
+       
+
         JTextField nameField = new JTextField(15);
 
 
         // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
+       JLabel ageLabel = new JLabel("Age");
+        ageLabel.setFont(newfont);
+ 
+
         JTextField ageField = new JTextField(15);
 
 
         // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
+
+         JLabel emailLabel = new JLabel("Email");
+        emailLabel.setFont(newfont);
+     
         JTextField emailField = new JTextField(15);
 
 
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");levelLabel.setBounds(50,90,100,20);
 
-        JRadioButton level1 = new JRadioButton("مبتدی");
-        JRadioButton level2 = new JRadioButton("متوسط");
-        JRadioButton level3 = new JRadioButton("پیشرفته");
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JLabel levelLabel = new JLabel("Software Familiarity Level");
+        levelLabel.setFont(newfont);
+
+        JRadioButton level1 = new JRadioButton("Basic");
+        level1.setFont(newfont);
+        JRadioButton level2 = new JRadioButton("Intermediate");
+        level2.setFont(newfont);
+       
+        JRadioButton level3 = new JRadioButton("Advanced");
+        level3.setFont(newfont);
+        
+        JRadioButton level4 = new JRadioButton("Unfamiliar");
+        level4.setFont(newfont);
+       
 
 
         // Group the radio buttons
@@ -47,8 +66,8 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("صفحه بعد");
-
+        JButton nextButton = new JButton("Next page");
+        nextButton.setFont(newfont);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

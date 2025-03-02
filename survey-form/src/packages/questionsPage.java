@@ -6,6 +6,7 @@ import java.awt.*;
 public class questionsPage {
 
     public void create(JFrame frame) {
+        Font newfont = new Font("Monospaced", Font.BOLD, 12);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBackground(new Color(0xEEE8AA));
@@ -17,14 +18,24 @@ public class questionsPage {
 
 
         // Question 1
-        JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
 
-        JRadioButton radio1_1 = new JRadioButton("۱");
-        JRadioButton radio1_2 = new JRadioButton("۲");
-        JRadioButton radio1_3 = new JRadioButton("۳");
-        JRadioButton radio1_4 = new JRadioButton("۴");
-        JRadioButton radio1_5 = new JRadioButton("۵");
+        JLabel question1 = new JLabel("How attractive do you find the software's user interface?");
+        question1.setFont(newfont);
+       
 
+         JRadioButton radio1_1 = new JRadioButton("1");
+        radio1_1.setFont(newfont);
+        JRadioButton radio1_2 = new JRadioButton("2");
+        radio1_2.setFont(newfont);
+         JRadioButton radio1_3 = new JRadioButton("3");
+        radio1_3.setFont(newfont);
+        JRadioButton radio1_4 = new JRadioButton("4");
+        radio1_4.setFont(newfont);
+       JRadioButton radio1_5 = new JRadioButton("5");
+        radio1_5.setFont(newfont);
+
+
+      
 
         ButtonGroup group1 = new ButtonGroup();
         group1.add(radio1_1);
@@ -34,15 +45,22 @@ public class questionsPage {
         group1.add(radio1_5);
 
         // Question 2
-        JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
 
-        JRadioButton radio2_1 = new JRadioButton("۱");
-        JRadioButton radio2_2 = new JRadioButton("۲");
-        JRadioButton radio2_3 = new JRadioButton("۳");
-        JRadioButton radio2_4 = new JRadioButton("۴");
-        JRadioButton radio2_5 = new JRadioButton("۵");
+        JLabel question2 = new JLabel("Is accessing the various features of the software easy for you?");
+        question2.setFont(newfont);
+       
 
 
+        JRadioButton radio2_1 = new JRadioButton("1");
+        radio2_1.setFont(newfont);
+        JRadioButton radio2_2 = new JRadioButton("2");
+        radio2_2.setFont(newfont);
+        JRadioButton radio2_3 = new JRadioButton("3");
+        radio2_3.setFont(newfont);
+        JRadioButton radio2_4 = new JRadioButton("4");
+        radio2_4.setFont(newfont);
+        JRadioButton radio2_5 = new JRadioButton("5");
+        radio2_5.setFont(newfont);
 
         ButtonGroup group2 = new ButtonGroup();
         group2.add(radio2_1);
@@ -52,13 +70,23 @@ public class questionsPage {
         group2.add(radio2_5);
 
         // Question 3
-        JLabel question3 = new JLabel("چقدر طراحی صفحات نرم افزار ساده و کاربرپسند است؟");
 
-        JRadioButton radio3_1 = new JRadioButton("۱");
-        JRadioButton radio3_2 = new JRadioButton("۲");
-        JRadioButton radio3_3 = new JRadioButton("۳");
-        JRadioButton radio3_4 = new JRadioButton("۴");
-        JRadioButton radio3_5 = new JRadioButton("۵");
+
+        JLabel question3 = new JLabel("How simple and user-friendly is the design of the software's pages?");
+        question3.setFont(newfont);
+       
+
+        JRadioButton radio3_1 = new JRadioButton("1");
+        radio3_1.setFont(newfont);
+        JRadioButton radio3_2 = new JRadioButton("2");
+        radio3_2.setFont(newfont);
+        JRadioButton radio3_3 = new JRadioButton("3");
+        radio3_3.setFont(newfont);
+        JRadioButton radio3_4 = new JRadioButton("4");
+        radio3_4.setFont(newfont);
+        JRadioButton radio3_5 = new JRadioButton("5");
+        radio3_5.setFont(newfont);
+
 
 
         ButtonGroup group3 = new ButtonGroup();
@@ -69,14 +97,21 @@ public class questionsPage {
         group3.add(radio3_5);
 
         // Question 4
-        JLabel question4 = new JLabel("آیا رنگ ها و فونت های استفاده شده در نرم افزار مناسب هستند؟");
-        question4.setBounds(10,250,350,20);
 
-        JRadioButton radio4_1 = new JRadioButton("۱");
-        JRadioButton radio4_2 = new JRadioButton("۲");
-        JRadioButton radio4_3 = new JRadioButton("۳");
-        JRadioButton radio4_4 = new JRadioButton("۴");
-        JRadioButton radio4_5 = new JRadioButton("۵");
+        JLabel question4 = new JLabel("Are the colors and fonts used in the software appropriate?");
+        question4.setFont(newfont);
+
+       
+        JRadioButton radio4_1 = new JRadioButton("1");
+        radio4_1.setFont(newfont);
+        JRadioButton radio4_2 = new JRadioButton("2");
+        radio4_2.setFont(newfont);
+        JRadioButton radio4_3 = new JRadioButton("3");
+        radio4_3.setFont(newfont);
+        JRadioButton radio4_4 = new JRadioButton("4");
+        radio4_4.setFont(newfont);
+        JRadioButton radio4_5 = new JRadioButton("5");
+        radio4_5.setFont(newfont);
 
 
         ButtonGroup group4 = new ButtonGroup();
@@ -87,8 +122,9 @@ public class questionsPage {
         group4.add(radio4_5);
 
         // Next button to go to Page3
-        JButton nextButton = new JButton("صفحه بعد");
-        nextButton.setBounds(10,320,100,20);
+        JButton nextButton = new JButton("Next page");
+        nextButton.setFont(newfont);
+
         nextButton.addActionListener(e -> {
             frame.remove(panel);
             frame.revalidate();
